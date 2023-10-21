@@ -1,0 +1,49 @@
+.table-container {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+table {
+	border-collapse: collapse;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+th, td {
+	
+	background-color: rgba(255,255,255,0.2);
+	color: #fff;
+}
+
+th {
+    padding: 15px;
+	text-align: left;
+    background-color: #55608f;
+}
+
+	tr:hover {
+			background-color: rgba(83, 144, 236, 0.986);
+		}
+    td:hover {
+        &:before {
+            content: "";
+            left: 0;
+            right: 0;
+            top: -9999px;
+            bottom: -9999px;
+            background-color: rgba(240, 226, 226, 0.2);
+            z-index: -1;
+        }
+    }
+.radioName{
+    height:100%;
+    width:100%;
+    padding: 15px;
+}
+
+
+.statistics-table{
+    margin-bottom: 10%;
+    min-width: 280px;
+}

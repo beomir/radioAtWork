@@ -1,0 +1,356 @@
+body{
+    /* font-family: Arial, Helvetica, sans-serif; */
+    background-color:rgb(24, 1, 54);
+    color:powderblue;
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+    cursor:pointer;
+}
+a:hover{
+    font-weight: bold;
+}
+
+
+
+.leftNav{
+    position:absolute;
+    left: 20%;
+    width: 17%;
+}
+
+.rightNav{
+    position:absolute;
+    right: 20%;
+}
+
+.flags{
+    position:absolute;
+    right: 20%;
+    z-index: 1;
+}
+
+.flags img{
+    cursor:pointer;
+    transition: all 1s ease;
+    z-index: 1;
+}
+
+.flags img:hover{
+    transition: all 0.6s;
+    transform: scale(1.4);
+    z-index: 50;
+}
+
+.circle {
+    width: 180px;
+    line-height: 90px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 21px;
+    font-weight: bold;
+    color: white;
+    border: 1px solid white;
+    background-image: linear-gradient(orange, red);
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: all 1s ease;
+    cursor:pointer;
+}
+
+.circleBigger{
+    transition: all 0.6s;
+    transform: scale(1.4);
+    cursor:pointer;
+}
+
+.hideToLeftSide{
+    position:absoulute;
+    transform: translateX(-100%);
+}
+
+.hideToLeftSideIn90Percent{
+    position:absoulute;
+    transform: translateX(-90%);
+    transition: all 1s;
+}
+
+.hideToUpSide{
+    position:absoulute;
+    transform: translateY(-155%);
+    transition: all 1s;
+}
+
+.hideAboveTheTop{
+    position:absoulute;
+    transform: translateY(-500%);
+    transition: all 1s;
+}
+
+.formValues{
+    transition: 1s;
+}
+
+.doNotDisplay{
+    display:none;
+}
+
+.errorBox{
+    position:absolute;
+    background-color:#bd5c55;
+    color:aquamarine;
+    top:80px;
+    left:2%;
+    border-radius: 2%;
+    padding: 1%;
+    width:20%;
+    transition: all 1s;
+}
+
+.correctBox{
+    position:absolute;
+    background-color:#8eb33a;
+    color:rgb(16, 115, 133);
+    top:80px;
+    left:2%;
+    border-radius: 2%;
+    padding: 1%;
+    width:20%;
+    transition: all 1s;
+}
+
+.errorBoxRadio{
+    position:absolute;
+    background-color:#bd5c55;
+    color:aquamarine;
+    top:80px;
+    right:5%;
+    border-radius: 2%;
+    padding: 1%;
+    width:20%;
+    transition: all 1s;
+}
+
+.correctBoxRadio{
+    position:absolute;
+    background-color:#8eb33a;
+    color:rgb(16, 115, 133);
+    top:80px;
+    right:5%;
+    border-radius: 2%;
+    padding: 1%;
+    width:20%;
+    transition: all 1s;
+}
+
+.rotate{
+    animation-name: infoBox;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes infoBox {
+    0% {transform: rotate(3deg)}
+    50% {transform: rotate(-3deg)}
+    100% {transform: rotate(3deg)}
+  }
+
+.rotate180deg{
+    animation: rotate180 2s forwards;
+}
+
+@keyframes rotate180 {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(180deg)}
+  }
+
+  .rotate180degBack{
+    animation: rotate180B 2s forwards;
+}
+
+@keyframes rotate180B {
+    from {transform: rotate(180deg)}
+    to {transform: rotate(0deg)}
+  }
+
+.rotate270deg{
+    animation: rotate270 2s forwards;
+}
+
+@keyframes rotate270 {
+    from {transform: rotate(90deg)}
+    to {transform: rotate(270deg)}
+}
+
+.rotate270degBack{
+    animation: rotate270back 2s forwards;
+}
+
+@keyframes rotate270back {
+    from {transform: rotate(270deg)}
+    to {transform: rotate(90deg)}
+}
+
+
+nav{
+   top: 0px;
+   min-height: 50px;
+   background-color: black;
+   padding-bottom: 0.5%;
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+}
+
+
+#rectangle1 {
+    height: 25px;
+    background-image: radial-gradient(100% 100% at 100% 0, #50504d 0, #0efff3 100%);
+    animation-name: rectangle1s;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+ }
+
+ #rectangle2 {
+    height: 50px;
+    background-image: radial-gradient(100% 100% at 100% 0, #777227 0, #26db0e 100%);
+    animation-name: rectangle2s;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+ }
+
+ #rectangle3 {
+    height: 15px;
+    background-image: radial-gradient(100% 100% at 100% 0, #91ff02 0, #ff0e0e 100%);
+    animation-name: rectangle3s;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+ }
+
+ #rectangle4 {
+    height: 35px;
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #0e4fdb 100%);
+    animation-name: rectangle4s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+ }
+
+ @keyframes rectangle1s {
+    0% {height: 25px}
+    50% {height: 35px}
+    100% {height: 25px}
+  }
+
+  @keyframes rectangle2s {
+    0% {height: 50px}
+    50% {height: 25px}
+    100% {height: 50px}
+  }
+
+  @keyframes rectangle3s {
+    0% {height: 15px}
+    50% {height: 50px}
+    100% {height: 15px}
+  }
+  
+  @keyframes rectangle4s {
+    0% {height: 35px}
+    50% {height: 2px}
+    100% {height: 35px}
+  }
+
+ .navTitle{
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-right: 2%;
+    font-size:xx-large;
+    font-weight: bold;
+    animation-name: navTitleAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+ }
+
+ @keyframes navTitleAnimation {
+    0%   {background-color:#0efff3; }
+    25%  {background-color:#26db0e; }
+    50%  {background-color:#ff0e0e; }
+    75%  {background-color:#0e4fdb; }
+    100% {background-color:#0efff3; }
+  }
+
+ .rectangle {
+    width: 25px;
+ }
+
+.makeItBigger {
+    transition: all 1 ease;
+}
+
+.makeItBigger:hover {
+    transition: all 0.6s;
+    transform: scale(1.4);
+}
+
+.rightDownCorner{
+    right: 1%;
+    position:absolute;
+    bottom: 1%;
+    transition: all 1s;
+}
+
+.questionBox{
+    position:absolute;
+    background-color:#5b43b4;
+    color:aquamarine;
+    top:80px;
+    right:4%;
+    border-radius: 2%;
+    padding: 1%;
+    width:20%;
+    transition: all 1s;
+    z-index: 10;
+}
+
+.block-pointer-events {
+    pointer-events: none;
+    position:fixed;
+    z-index: 5;
+    left:0;
+    height: 100%;
+    width: 100%;
+    overflow:auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.inline{
+    display:inline;
+}
+
+
+.centerText{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    border-radius: 15px;
+    max-width: 300px;
+    height: 350px;
+    background-color:#5b43b4;
+    text-align: center;
+    padding: 10 30 30 30;
+    
+}
+
+.counter{
+    position:absolute;
+    left: 20%;
+    z-index: 1;
+}
+
+.statistics{
+    position:absolute;
+    left: 3%;
+}
